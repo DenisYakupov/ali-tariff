@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-
-	fmt.Println(fmt.Printf("CHUNKS\nbefore: %d", getSlice(22)))
-	fmt.Println(fmt.Printf("after: %d \n\n", utils.GetChunkSlices(getSlice(22), 3)))
+	fmt.Println(fmt.Sprintf("CHUNKS\nbefore: %d", getSlice(22)))
+	fmt.Println(fmt.Sprintf("after: %d \n\n", utils.GetChunkSlices(getSlice(22), 3)))
 
 	fmt.Println("CONVERTER\nbefore: ")
 	fmt.Println(getMap())
@@ -27,10 +26,8 @@ func getSlice(sliceSize int) []int {
 }
 
 func getMap() map[string]int {
-
-	m := map[string]int{
+	return map[string]int{
 		"key1": 1,
 		"key2": 2,
 	}
-	return m
 }

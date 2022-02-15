@@ -1,7 +1,6 @@
 package utils
 
 func GetChunkSlices(slice []int, sizeChunk int) [][]int {
-
 	result := make([][]int, 0)
 	key := 0
 	for i := 0; i < len(slice); i++ {
@@ -31,5 +30,6 @@ func ConverterKeyValue(m map[string]int) map[int]string {
 	for key, value := range m {
 		result[value] = key
 	}
+
 	return result
 }
